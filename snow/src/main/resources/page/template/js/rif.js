@@ -45,7 +45,8 @@ define([], function () {
                 url: "/quest/insert",
                 param: $scope.formData,
                 callback: function (res) {
-                    alert("成功！")
+                    alert("提交成功！");
+                    window.history.back(-1);
                 }
             })
         }

@@ -65,7 +65,7 @@ body,p,h1,h2,h3,h4,h5,h6,ul,dl,dd,td,input,fieldset,textarea,option{ margin:0; p
 }
 .content-login{
     width: 80%;
-    height: 80%;
+    height: 60%;
     background: white;
     margin-top: 20%;
     margin-left: 10%;

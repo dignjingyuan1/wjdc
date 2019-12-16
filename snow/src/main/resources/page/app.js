@@ -94,8 +94,6 @@ define(["angular", "angularAMD", "angular-ui-router", "angular-sanitize"], funct
     app.run(function ($rootScope,$state) {
 //        console.log("app run")
        $rootScope.$on('$stateChangeStart',function(event){
-           console.log("change");
-           // TODO 监听操作是否有token没有去登陆
            if(!sessionStorage.getItem("openid")){
                 $state.go("login")
            }

@@ -1,5 +1,9 @@
 define([], function () {
         return ["$scope", "$state", function ($scope, $state) {
+            var oo = localStorage.getItem("openid");
+            if(oo){
+                document.getElementById("dudu").checked = "checked"
+            }
             $scope.statement = function () {
                 $state.go("statement");
             }
@@ -26,6 +30,7 @@ define([], function () {
                                 console.log('登陸返回的用戶：', res)
                                 if(res.openid){
                                     sessionStorage.setItem("openid",res.openid);
+                                    localStorage.setItem("openid",res.openid);
                                     $state.go("door")
                                 }else{
                                     alert('用戶名密码不正确')
