@@ -1,0 +1,48 @@
+#配置log级别
+logging:
+  path: /user/local/log
+  level:
+    com:
+      favorites: DEBUG
+    org:
+      springframework:
+        web: INFO
+      hibernate: ERROR
+server :
+  port : 9998
+spring:
+  #配置链接数据库
+#  datasource:
+#    url: jdbc:mysql://localhost:3307/sihuo?serverTimezone=CTT
+#    username: root
+#    password: root
+#    driver-class-name: com.mysql.jdbc.Driver
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/wenjuan?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: zf1902@es
+    driver-class-name: com.mysql.jdbc.Driver
+  #配置jpa
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+  resources:
+    static-locations: classpath:/page/
+#  rabbitmq:
+#    host: 127.0.0.1
+#    port: 5672
+#    username: admin
+#    password: 123456
+
+mybatis:
+  config-locations: classpath:mybatis/mybatis-config.xml
+  mapperLocations: classpath:mybatis/mapper/*.xml
+
+com:
+  neo:
+    title: 的肯定开始
+    description: 打瞌睡法鸡

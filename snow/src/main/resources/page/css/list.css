@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+body,p,h1,h2,h3,h4,h5,h6,ul,dl,dd,td,input,fieldset,textarea,option{ margin:0; padding:0; box-sizing: border-box}
+li{list-style:none;}
+a{text-decoration:none; color:#333;}
+img{border:none; vertical-align:top; }
+a,input{outline:none;}
+h1,h2,h3,h4,h5,h6,b,strong{font-weight:100;}
+i,em{font-style:normal;}
+body{font:12px "微软雅黑";}
+.clear{zoom:1;}
+.clear:after{content:"."; display:block; clear:both; height:0; visibility:hidden;}
+.fl{float:left;}
+.fr{float:right;}
+div,p{
+    box-sizing: border-box
+}
+Html{font-size:10px}
+*{
+    margin:0; padding:0;
+}
+html,body{
+    width: 100%;height: 100%;
+}
+.main{
+    width: 100%;height: 100%;
+}
+.main-app{
+    width: 100%;height: 100%;
+}
+body,p,h1,h2,h3,h4,h5,h6,ul,dl,dd,td,input,fieldset,textarea,option{ margin:0; padding:0; box-sizing: border-box}
+.title-bar{
+    position: fixed;
+    height: 4.5rem;
+    width: 100%;
+    line-height: 4.5rem;
+    display: flex;
+    top: 0;
+    background:white;
+}
+.title-item{
+    flex: 1;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #065aff;
+}
+.title-act{
+    color: white;
+    background:#adc9ff;
+}
+.list-content{
+    margin-top: 4.5rem;
+    background: #f2f2f2;
+    padding-top: 1rem;
+}
+.item-box{
+    height: 5.5rem;
+    background: white;
+    width: 100%;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 0.5rem 1rem;
+}

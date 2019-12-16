@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta http-equiv="Cache-Control" content="no-transform">
+	<meta http-equiv="Cache-Control" content="no-siteapp">
+	<meta name="applicable-device" content="pc">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-eqiv="cleartype" content="ON">
+	<link href="css/acr.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="home-panel">
+		<div class="scoll-panel">
+			<form id="acrForm">
+				<h2 style="text-align: center; margin: 2rem;">APL 用药不良反应调查</h2>
+				<br>
+				<h3>说明：调查问卷分为两部分，分别由医生和患者填写。您的意见将作为该项研究的一部
+					分进行整体分析。您的意见，没有对错之分，将得到严格保密，不做单份资料分析，仅
+					用于整体的汇总分析。感谢您的配合！
+				</h3>
+				<br>
+				<p>患者姓名首字母：<input name="nameAbc" id="nameAbc" type="text"></p>
+				<p>患者年龄：<input name="age" id="age" type="text">岁</p>
+				<p>性别：<input name="sex" id="sex" type="checkbox" value="男">男<input type="checkbox" value="女">女</p>
+				<p>体重：<input name="input3" type="text">kg</p>
+				<p>是否合并有（没有，不用填写）其他疾病：<input name="input1" type="text"></p>
+				<p>危险分层：<input name="input4" type="checkbox" value="高危">高危 <input name="input4" type="checkbox"
+						value="非高危">非高危</p>
+				<p>疾病期： <input name="input5" type="checkbox" value="初治">初治 <input name="input5" type="checkbox"
+						value="进展">进展 <input name="input5" type="checkbox" value="复发">复发</p>
+				<br>
+				<h3>一、治疗选择：</h3>
+				<p>1、 该患者是否使用过复方黄黛片治疗（单选）</p>
+				<p><input name="input6" type="radio" value="是">是 <input name="input6" type="radio" value="否">否</p>
+				<p>2、 请具体描述您这次的治疗方案以及该方案执行周期</p>
+				<p><textarea name="input7" style="width: 100%;" name="" rows="5"></textarea></p>
+				<p>3、请描述此次治疗其他伴随治疗手段/用药</p>
+				<p><textarea name="input8" style="width: 100%;" name="" rows="5"></textarea></p>
+				<p>4、该方案疗效评价：</p>
+				<p><input type="radio" name="input9" value="完全缓解"> 完全缓解 <input type="radio" name="input10" value="部分缓解">
+					部分缓解 <input type="radio" name="input11" value="疾病进展"> 疾病进展 <input type="radio" name="input12"
+						value="死亡"> 死亡 <input type="radio" name="input13" value="失访"> 失访</p>
+				<br>
+				<h3>副反应：</h3>
+				<p>
+					<h4>关联性：</h4>
+				</p>
+				<p>A. 肯定有关：反应出现的时间符合用药的时间顺序，反应符合研究药物已知的
+					反应类型，减量或停药后改善，重复给药再次出现。</p>
+				<p>B. 可能有关：反应出现的时间符合用药的时间顺序，反应符合研究方案已知的
+					反应类型，患者的临床状态或其它治疗方式也有可能产生该反应。</p>
+				<p>C. 可能无关：反应出现的时间不符合用药的时间顺序，反应不太符合研究方案
+					已知的反应类型，患者临床状态或其它治疗方式也有可能产生该反应。</p>
+				<p>D. 无关：反应出现的时间不符合用药的时间顺序，反应有符合非研究方案已知
+					的反应类型，患者的临床状态或其它治疗方式也有可能产生该反应，疾病状
+					态改善或停止其它治疗方式反应消除，重复使用其它治疗方法反应出现。</p>
+				<p>E. 无法判定：反应出现的时间与用药的时间顺序无明确关系，反应与研究方案
+					已知的反应类型相似，同时使用的其它药物也可能引起相同的反应。</p>
+				<br>
+				<h3>胃肠道反应</h3>
+				<table border="1px solid #ccc" style="text-align: center;" cellspacing="0">
+					<tr>
+						<td></td>
+						<td>0</td>
+						<td>Ⅰ</td>
+						<td>Ⅱ</td>
+						<td>Ⅲ</td>
+						<td>Ⅳ</td>
+						<td>与黄黛片关联性</td>
+						<td>副反应处理方式</td>
+						<td>副反应处理结果</td>
+					</tr>
+					<tr>
+						<td>腹部疼痛</td>
+						<td><input type="checkbox" name="input15"></td>
+						<td><input type="checkbox" name="input16"></td>
+						<td><input type="checkbox" name="input17"></td>
+						<td><input type="checkbox" name="input18"></td>
+						<td><input type="checkbox" name="input19"></td>
+						<td>
+							<select name="input20" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input21"></td>
+						<td><input type="text" style="width: 4rem;" name="input22"></td>
+					</tr>
+					<tr>
+						<td>恶心呕吐</td>
+						<td><input type="checkbox" name="input23"></td>
+						<td><input type="checkbox" name="input24"></td>
+						<td><input type="checkbox" name="input25"></td>
+						<td><input type="checkbox" name="input26"></td>
+						<td><input type="checkbox" name="input27"></td>
+						<td>
+							<select name="input28" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input29"></td>
+						<td><input type="text" style="width: 4rem;" name="input30"></td>
+					</tr>
+					<tr>
+						<td>腹泻</td>
+						<td><input type="checkbox" name="input31"></td>
+						<td><input type="checkbox" name="input32"></td>
+						<td><input type="checkbox" name="input33"></td>
+						<td><input type="checkbox" name="input34"></td>
+						<td><input type="checkbox" name="input35"></td>
+						<td>
+							<select name="input36" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input37"></td>
+						<td><input type="text" style="width: 4rem;" name="input38"></td>
+					</tr>
+					<tr>
+						<td>便秘</td>
+						<td><input type="checkbox" name="input39"></td>
+						<td><input type="checkbox" name="input40"></td>
+						<td><input type="checkbox" name="input41"></td>
+						<td><input type="checkbox" name="input42"></td>
+						<td><input type="checkbox" name="input43"></td>
+						<td>
+							<select name="input44" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input45"></td>
+						<td><input type="text" style="width: 4rem;" name="input46"></td>
+					</tr>
+					<tr>
+						<td>消化不良</td>
+						<td><input type="checkbox" name="input47"></td>
+						<td><input type="checkbox" name="input48"></td>
+						<td><input type="checkbox" name="input49"></td>
+						<td><input type="checkbox" name="input50"></td>
+						<td><input type="checkbox" name="input51"></td>
+						<td>
+							<select name="input42" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input53"></td>
+						<td><input type="text" style="width: 4rem;" name="input54"></td>
+					</tr>
+					<tr>
+						<td>胃痛</td>
+						<td><input type="checkbox" name="input55"></td>
+						<td><input type="checkbox" name="input56"></td>
+						<td><input type="checkbox" name="input57"></td>
+						<td><input type="checkbox" name="input58"></td>
+						<td><input type="checkbox" name="input59"></td>
+						<td>
+							<select name="input60" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input61"></td>
+						<td><input type="text" style="width: 4rem;" name="input62"></td>
+					</tr>
+				</table>
+				<br>
+				<h3>心脏毒性</h3>
+				<table border="1px solid #ccc" style="text-align: center;" cellspacing="0">
+					<tr>
+						<td></td>
+						<td>0</td>
+						<td>Ⅰ</td>
+						<td>Ⅱ</td>
+						<td>Ⅲ</td>
+						<td>Ⅳ</td>
+						<td>与黄黛片关联性</td>
+						<td>副反应处理方式</td>
+						<td>副反应处理结果</td>
+					</tr>
+					<tr>
+						<td>心动过速</td>
+						<td><input type="checkbox" name="input63"></td>
+						<td><input type="checkbox" name="input64"></td>
+						<td><input type="checkbox" name="input65"></td>
+						<td><input type="checkbox" name="input66"></td>
+						<td><input type="checkbox" name="input67"></td>
+						<td>
+							<select name="input68" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input69"></td>
+						<td><input type="text" style="width: 4rem;" name="input70"></td>
+					</tr>
+					<tr>
+						<td>QTC间期延长</td>
+						<td><input type="checkbox" name="input71"></td>
+						<td><input type="checkbox" name="input72"></td>
+						<td><input type="checkbox" name="input73"></td>
+						<td><input type="checkbox" name="input74"></td>
+						<td><input type="checkbox" name="input75"></td>
+						<td>
+							<select name="input76" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input77"></td>
+						<td><input type="text" style="width: 4rem;" name="input78"></td>
+					</tr>
+					<tr>
+						<td>心悸</td>
+						<td><input type="checkbox" name="input79"></td>
+						<td><input type="checkbox" name="input80"></td>
+						<td><input type="checkbox" name="input81"></td>
+						<td><input type="checkbox" name="input82"></td>
+						<td><input type="checkbox" name="input83"></td>
+						<td>
+							<select name="input84" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input85"></td>
+						<td><input type="text" style="width: 4rem;" name="input86"></td>
+					</tr>
+				</table>
+				<br>
+				<h3>肌肉骨骼、结缔组织与骨疾病</h3>
+				<table border="1px solid #ccc" style="text-align: center;" cellspacing="0">
+					<tr>
+						<td></td>
+						<td>0</td>
+						<td>Ⅰ</td>
+						<td>Ⅱ</td>
+						<td>Ⅲ</td>
+						<td>Ⅳ</td>
+						<td>与黄黛片关联性</td>
+						<td>副反应处理方式</td>
+						<td>副反应处理结果</td>
+					</tr>
+					<tr>
+						<td>关节痛</td>
+						<td><input type="checkbox" name="input87"></td>
+						<td><input type="checkbox" name="input88"></td>
+						<td><input type="checkbox" name="input89"></td>
+						<td><input type="checkbox" name="input90"></td>
+						<td><input type="checkbox" name="input91"></td>
+						<td>
+							<select name="input92" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input93"></td>
+						<td><input type="text" style="width: 4rem;" name="input94"></td>
+					</tr>
+					<tr>
+						<td>肌痛</td>
+						<td><input type="checkbox" name="input95"></td>
+						<td><input type="checkbox" name="input96"></td>
+						<td><input type="checkbox" name="input97"></td>
+						<td><input type="checkbox" name="input98"></td>
+						<td><input type="checkbox" name="input99"></td>
+						<td>
+							<select name="input100" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input101"></td>
+						<td><input type="text" style="width: 4rem;" name="input102"></td>
+					</tr>
+					<tr>
+						<td>骨痛</td>
+						<td><input type="checkbox" name="input103"></td>
+						<td><input type="checkbox" name="input104"></td>
+						<td><input type="checkbox" name="input105"></td>
+						<td><input type="checkbox" name="input106"></td>
+						<td><input type="checkbox" name="input107"></td>
+						<td>
+							<select name="input108" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input109"></td>
+						<td><input type="text" style="width: 4rem;" name="input110"></td>
+					</tr>
+					<tr>
+						<td>背痛</td>
+						<td><input type="checkbox" name="input111"></td>
+						<td><input type="checkbox" name="input112"></td>
+						<td><input type="checkbox" name="input113"></td>
+						<td><input type="checkbox" name="input114"></td>
+						<td><input type="checkbox" name="input115"></td>
+						<td>
+							<select name="input116" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input117"></td>
+						<td><input type="text" style="width: 4rem;" name="input118"></td>
+					</tr>
+					<tr>
+						<td>颈痛</td>
+						<td><input type="checkbox" name="input119"></td>
+						<td><input type="checkbox" name="input120"></td>
+						<td><input type="checkbox" name="input121"></td>
+						<td><input type="checkbox" name="input122"></td>
+						<td><input type="checkbox" name="input123"></td>
+						<td>
+							<select name="input124" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input125"></td>
+						<td><input type="text" style="width: 4rem;" name="input126"></td>
+					</tr>
+					<tr>
+						<td>肢痛</td>
+						<td><input type="checkbox" name="input127"></td>
+						<td><input type="checkbox" name="input128"></td>
+						<td><input type="checkbox" name="input129"></td>
+						<td><input type="checkbox" name="input130"></td>
+						<td><input type="checkbox" name="input131"></td>
+						<td>
+							<select name="input132" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input133"></td>
+						<td><input type="text" style="width: 4rem;" name="input134"></td>
+					</tr>
+					<tr>
+						<td>胸痛</td>
+						<td><input type="checkbox" name="input135"></td>
+						<td><input type="checkbox" name="input136"></td>
+						<td><input type="checkbox" name="input137"></td>
+						<td><input type="checkbox" name="input138"></td>
+						<td><input type="checkbox" name="input139"></td>
+						<td>
+							<select name="input140" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input141"></td>
+						<td><input type="text" style="width: 4rem;" name="input142"></td>
+					</tr>
+				</table>
+				<br>
+				<h3>皮肤和皮下组织副反应</h3>
+				<table border="1px solid #ccc" style="text-align: center;" cellspacing="0">
+					<tr>
+						<td></td>
+						<td>0</td>
+						<td>Ⅰ</td>
+						<td>Ⅱ</td>
+						<td>Ⅲ</td>
+						<td>Ⅳ</td>
+						<td>与黄黛片关联性</td>
+						<td>副反应处理方式</td>
+						<td>副反应处理结果</td>
+					</tr>
+					<tr>
+						<td>皮炎</td>
+						<td><input type="checkbox" name="input143"></td>
+						<td><input type="checkbox" name="input144"></td>
+						<td><input type="checkbox" name="input145"></td>
+						<td><input type="checkbox" name="input146"></td>
+						<td><input type="checkbox" name="input147"></td>
+						<td>
+							<select name="input148" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input149"></td>
+						<td><input type="text" style="width: 4rem;" name="input150"></td>
+					</tr>
+					<tr>
+						<td>口干眼干</td>
+						<td><input type="checkbox" name="input151"></td>
+						<td><input type="checkbox" name="input152"></td>
+						<td><input type="checkbox" name="input153"></td>
+						<td><input type="checkbox" name="input154"></td>
+						<td><input type="checkbox" name="input155"></td>
+						<td>
+							<select name="input156" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input157"></td>
+						<td><input type="text" style="width: 4rem;" name="input158"></td>
+					</tr>
+					<tr>
+						<td>色素沉着</td>
+						<td><input type="checkbox" name="input159"></td>
+						<td><input type="checkbox" name="input160"></td>
+						<td><input type="checkbox" name="input161"></td>
+						<td><input type="checkbox" name="input162"></td>
+						<td><input type="checkbox" name="input163"></td>
+						<td>
+							<select name="input164" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input165"></td>
+						<td><input type="text" style="width: 4rem;" name="input166"></td>
+					</tr>
+					<tr>
+						<td>皮肤干燥</td>
+						<td><input type="checkbox" name="input167"></td>
+						<td><input type="checkbox" name="input168"></td>
+						<td><input type="checkbox" name="input169"></td>
+						<td><input type="checkbox" name="input170"></td>
+						<td><input type="checkbox" name="input171"></td>
+						<td>
+							<select name="input172" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input173"></td>
+						<td><input type="text" style="width: 4rem;" name="input174"></td>
+					</tr>
+					<tr>
+						<td>皮肤溃疡</td>
+						<td><input type="checkbox" name="input175"></td>
+						<td><input type="checkbox" name="input176"></td>
+						<td><input type="checkbox" name="input177"></td>
+						<td><input type="checkbox" name="input178"></td>
+						<td><input type="checkbox" name="input179"></td>
+						<td>
+							<select name="input180" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input181"></td>
+						<td><input type="text" style="width: 4rem;" name="input182"></td>
+					</tr>
+					<tr>
+						<td>口腔黏膜水肿</td>
+						<td><input type="checkbox" name="input183"></td>
+						<td><input type="checkbox" name="input184"></td>
+						<td><input type="checkbox" name="input185"></td>
+						<td><input type="checkbox" name="input186"></td>
+						<td><input type="checkbox" name="input187"></td>
+						<td>
+							<select name="input188" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input189"></td>
+						<td><input type="text" style="width: 4rem;" name="input190"></td>
+					</tr>
+				</table>
+				<br>
+				<h3>肝脏功能</h3>
+				<table border="1px solid #ccc" style="text-align: center;" cellspacing="0">
+					<tr>
+						<td></td>
+						<td>0</td>
+						<td>Ⅰ</td>
+						<td>Ⅱ</td>
+						<td>Ⅲ</td>
+						<td>Ⅳ</td>
+						<td>与黄黛片关联性</td>
+						<td>副反应处理方式</td>
+						<td>副反应处理结果</td>
+					</tr>
+					<tr>
+						<td>谷丙转氨酶</td>
+						<td><input type="checkbox" name="input191"></td>
+						<td><input type="checkbox" name="input192"></td>
+						<td><input type="checkbox" name="input193"></td>
+						<td><input type="checkbox" name="input194"></td>
+						<td><input type="checkbox" name="input195"></td>
+						<td>
+							<select name="input196" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input197"></td>
+						<td><input type="text" style="width: 4rem;" name="input198"></td>
+					</tr>
+					<tr>
+						<td>碱性磷酸酶</td>
+						<td><input type="checkbox" name="input199"></td>
+						<td><input type="checkbox" name="input200"></td>
+						<td><input type="checkbox" name="input201"></td>
+						<td><input type="checkbox" name="input202"></td>
+						<td><input type="checkbox" name="input203"></td>
+						<td>
+							<select name="input204" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input205"></td>
+						<td><input type="text" style="width: 4rem;" name="input206"></td>
+					</tr>
+					<tr>
+						<td>胆红素</td>
+						<td><input type="checkbox" name="input207"></td>
+						<td><input type="checkbox" name="input208"></td>
+						<td><input type="checkbox" name="input209"></td>
+						<td><input type="checkbox" name="input210"></td>
+						<td><input type="checkbox" name="input211"></td>
+						<td>
+							<select name="input212" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input213"></td>
+						<td><input type="text" style="width: 4rem;" name="input214"></td>
+					</tr>
+				</table>
+				<br>
+				<h3>呼吸道相关副反应</h3>
+				<table border="1px solid #ccc" style="text-align: center;" cellspacing="0">
+					<tr>
+						<td></td>
+						<td>0</td>
+						<td>Ⅰ</td>
+						<td>Ⅱ</td>
+						<td>Ⅲ</td>
+						<td>Ⅳ</td>
+						<td>与黄黛片关联性</td>
+						<td>副反应处理方式</td>
+						<td>副反应处理结果</td>
+					</tr>
+					<tr>
+						<td>咳嗽</td>
+						<td><input type="checkbox" name="input215"></td>
+						<td><input type="checkbox" name="input216"></td>
+						<td><input type="checkbox" name="input217"></td>
+						<td><input type="checkbox" name="input218"></td>
+						<td><input type="checkbox" name="input219"></td>
+						<td>
+							<select name="input218" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input221"></td>
+						<td><input type="text" style="width: 4rem;" name="input222"></td>
+					</tr>
+					<tr>
+						<td>胸闷</td>
+						<td><input type="checkbox" name="input223"></td>
+						<td><input type="checkbox" name="input224"></td>
+						<td><input type="checkbox" name="input225"></td>
+						<td><input type="checkbox" name="input226"></td>
+						<td><input type="checkbox" name="input227"></td>
+						<td>
+
+							<select name="input228" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input229"></td>
+						<td><input type="text" style="width: 4rem;" name="input230"></td>
+					</tr>
+				</table>
+				<br>
+				<p>其他副反应（请描述）：<input type="text" name="input240"></p>
+				<button class="dududa" ng-click="submit()">填写完成</button>
+			</form>
+
+		</div>
+	</div>
+</body>
+
+</html>

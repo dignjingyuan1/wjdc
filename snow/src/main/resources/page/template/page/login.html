@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="applicable-device" content="pc">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-eqiv="cleartype" content="ON">
+    <link href="css/reg.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="home-panel">
+    <div class="content-login">
+        <div class="item">
+            <p>手&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机<span></span></p>
+            <input ng-model="phoneNumber" type="text">
+        </div>
+        <div class="item">
+            <p>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码<span></span></p>
+            <input ng-model="password" type="password">
+        </div>
+        <div class="line"></div>
+        <div class="button-box">
+            <div class="button-item" ng-click="goBack()">取&nbsp;&nbsp;&nbsp;&nbsp;消</div>
+            <div class="button-item" ng-click="confirm()">确&nbsp;&nbsp;&nbsp;&nbsp;定</div>
+        </div>
+    </div>
+    <p class="dudu">
+        <input id="dudu" type="checkbox" name="dudu" />
+        <span ng-click="statement()">《中国血液肿瘤患者不良反应调研》项目背景</span>
+    </p>
+</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="applicable-device" content="pc">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-eqiv="cleartype" content="ON">
+    <link href="css/reg.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="home-panel">
+        <div class="content">
+            <div class="item">
+                <p>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名<span></span></p>
+                <input ng-model="info.userName" type="text">
+            </div>
+            <div class="item">
+                <p>手&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机<span></span></p>
+                <input ng-model="info.phoneNumber" type="text">
+            </div>
+            <div class="item">
+                <p>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码<span></span></p>
+                <input ng-model="info.password" type="password">
+            </div>
+            <div class="item">
+                <p>验&nbsp;&nbsp;证&nbsp;&nbsp;码<span></span></p>
+                <input ng-model="info.validate" class="sort" type="text">
+                <button class="button" ng-click="getValidateCode()" id="duda">{{textdudu}}</button>
+            </div>
+            <div class="item" style="margin-bottom: 0;">
+                <p>医&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;院<span></span></p>
+                <div class="hospital">
+                    <select ng-model="info.province" class="provinceTarget inputEle selectTag" id="province">
+                        <option data-index="-1" value="省份">省份</option>
+                    </select>
+                    <select style="margin-left: 8%" class="cityTarget inputEle selectTag" id="city">
+                        <option data-index="-1" value="城市">城市</option>
+                    </select>
+                </div>
+            </div>
+            <div class="item">
+                <p><span></span></p>
+                <input ng-model="info.hospitalName" type="text" placeholder="医院名称">
+            </div>
+            <div class="item">
+                <p>科&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;室<span></span></p>
+                <!-- <input ng-model="info.jobName" type="text"> -->
+                <select class="dudu-zoom" ng-model="info.jobName">
+                    <option value="血液科">血液科</option>
+                    <option value="肿瘤内科">肿瘤内科</option>
+                    <option value="肿瘤外科">肿瘤外科</option>
+                    <option value="神经内科">神经内科</option>
+                    <option value="心内科">心内科</option>
+                    <option value="呼吸内科">呼吸内科</option>
+                    <option value="消化内科">消化内科</option>
+                    <option value="内分泌">内分泌</option>
+                    <option value="老年科">老年科</option>
+                </select>
+            </div>
+            <div class="item">
+                <p>职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称<span></span></p>
+                <!-- <input ng-model="info.title" type="text"> -->
+                <select class="dudu-zoom" ng-model="info.title">
+                    <option value="住院医师">住院医师</option>
+                    <option value="主治医师">主治医师</option>
+                    <option value="副主任">副主任</option>
+                    <option value="主任">主任</option>
+                </select>
+            </div>
+            <div class="line"></div>
+            <div class="button-box">
+                <div class="button-item" ng-click="goBack()">取&nbsp;&nbsp;&nbsp;&nbsp;消</div>
+                <div class="button-item" ng-click="confirm()">确&nbsp;&nbsp;&nbsp;&nbsp;定</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

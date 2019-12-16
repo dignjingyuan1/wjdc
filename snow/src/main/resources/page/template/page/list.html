@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="applicable-device" content="pc">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-eqiv="cleartype" content="ON">
+    <link href="css/list.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="title-bar">
+    <div class="title-item title-act" ng-click="clickIndex(0)">
+        ACR副反应
+    </div>
+    <div class="title-item" ng-click="clickIndex(1)">
+        RIF副反应
+    </div>
+    <div class="title-item" ng-click="clickIndex(2)">
+        VCR副反应
+    </div>
+</div>
+<div class="list-content">
+    <div class="item-box" ng-repeat="qitem in qlist" ng-click="goto(qitem.type,qitem.id)">
+        <p style="font-size: 2rem;">{{qitem.nameAbc}}</p>
+        <p style="margin-top: 0.5rem;">
+            <span>年龄：</span><span>{{qitem.age}}</span>
+            <span>性别：</span><span>{{qitem.sex}}</span>
+            <span>添加时间：</span><span>{{qitem.createDate | date:'yyyy-MM-dd HH:mm:ss'}}</span>
+        </p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+body,p,h1,h2,h3,h4,h5,h6,ul,dl,dd,td,input,fieldset,textarea,option{ margin:0; padding:0; box-sizing: border-box}
+li{list-style:none;}
+a{text-decoration:none; color:#333;}
+img{border:none; vertical-align:top; }
+a,input{outline:none;}
+h1,h2,h3,h4,h5,h6,b,strong{font-weight:100;}
+i,em{font-style:normal;}
+body{font:12px "微软雅黑";}
+.clear{zoom:1;}
+.clear:after{content:"."; display:block; clear:both; height:0; visibility:hidden;}
+.fl{float:left;}
+.fr{float:right;}
+div,p{
+    box-sizing: border-box
+}
+Html{font-size:10px}
+*{
+    margin:0; padding:0;
+}
+html,body{
+    width: 100%;height: 100%;
+}
+.main{
+    width: 100%;height: 100%;
+}
+.main-app{
+    width: 100%;height: 100%;
+}
+body,p,h1,h2,h3,h4,h5,h6,ul,dl,dd,td,input,fieldset,textarea,option{ margin:0; padding:0; box-sizing: border-box}
+
+.home-panel{
+    background: url(../img/orther-bg.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+}
+.scoll-panel{
+    width: 90%;
+    margin-left: 5%;
+    background-color: #ffffffb3;
+    height: 100%;
+    overflow: scroll;
+    color: black;
+    padding: 0.5rem;
+    line-height: 2rem;
+}
+.scoll-panel > h2 {
+    text-align: center;
+}
+.dududa{
+    width: 30%;
+    margin-left: 35%;
+    border: none;
+    background: #147aff;
+    color: white;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

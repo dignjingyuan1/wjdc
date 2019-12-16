@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta http-equiv="Cache-Control" content="no-transform">
+	<meta http-equiv="Cache-Control" content="no-siteapp">
+	<meta name="applicable-device" content="pc">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-eqiv="cleartype" content="ON">
+	<link href="css/acr.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="home-panel">
+		<div class="scoll-panel">
+			<form id="acrForm">
+				<h2 style="text-align: center; margin: 2rem;">淋巴系统血液肿瘤用药不良反应调查</h2>
+				<br>
+				<h3>说明：调查问卷分为两部分，分别由医生和患者填写。您的意见将作为该项研究的一部
+					分进行整体分析。您的意见，没有对错之分，将得到严格保密，不做单份资料分析，仅
+					用于整体的汇总分析。感谢您的配合！
+				</h3>
+				<br>
+				<p>患者姓名首字母：<input name="nameAbc" id="nameAbc" type="text"></p>
+				<p>患者年龄：<input name="age" id="age" type="text">岁</p>
+				<p>性别：<input name="sex" id="sex" type="checkbox" value="男">男<input type="checkbox" value="女">女</p>
+				<p>体表面积：<input type="text" name="add1"> m2</p>
+				<p>是否合并有（没有，不用填写）其他疾病：<input name="input1" type="text"></p>
+				<p>所患疾病：<input name="input2" type="checkbox" value="儿童&青少年急性淋巴细胞胞白血病">儿童&青少年急性淋巴细胞胞白血病 <input
+						name="input2" type="checkbox" value="成人霍奇金淋巴瘤">成人霍奇金淋巴瘤 <input name="input2" type="checkbox"
+						value="成人非霍奇金淋巴瘤">成人非霍奇金淋巴瘤 <input name="input2" type="checkbox" value="其他肿瘤">其他肿瘤：<input
+						name="input3" type="text"></p>
+				<p>儿童&青少年急性淋巴细胞胞白血病危险分层：<input name="input4" type="checkbox" value="低危">低危 <input name="input4"
+						type="checkbox" value="中危">中危 <input name="input4" type="checkbox" value="高危">高危</p>
+				<p>成人 HL&NHL 分期:<input name="add2" type="checkbox" value="Ⅰ期">Ⅰ期 <input name="add2" type="checkbox"
+						value="Ⅱ期">Ⅱ期 <input name="add2" type="checkbox" value="Ⅲ期">Ⅲ期 <input name="add2"
+						type="checkbox" value="Ⅳ期">Ⅳ期 <input name="add2" type="checkbox" value=" A 无症状"> A 无症状 <input
+						name="add2" type="checkbox" value="B 有全身症状"> B 有全身症状</p>
+				<br>
+				<h3>一、治疗选择：</h3>
+				<p>1、 该患者是否使用过含长春新碱方案治疗</p>
+				<p><input name="input6" type="radio" value="是">是 <input name="input6" type="radio" value="否">否</p>
+				<p>2、 针对该患者您的具体治疗方案和周期</p>
+				<p style="text-decoration-line: underline;">注意：如果是儿童，需包含诱导治疗、早期强化治疗、缓解后巩固治疗、延迟强化治疗和维持治疗方案、以及对应的周期。
+				</p>
+				<p><textarea name="input7" style="width: 100%;" name="" rows="5"></textarea></p>
+				<p>3、请描述此次治疗其他伴随治疗手段/用药：</p>
+				<p><textarea name="input8" style="width: 100%;" name="" rows="5"></textarea></p>
+				<p>4、该方案疗效评价：</p>
+				<p><input type="radio" name="input9" value="完全缓解"> 完全缓解 <input type="radio" name="input10" value="部分缓解">
+					部分缓解 <input type="radio" name="input11" value="疾病进展"> 疾病进展 <input type="radio" name="input12"
+						value="死亡"> 死亡 <input type="radio" name="input13" value="失访"> 失访</p>
+				<br>
+				<h3>副反应：</h3>
+				<p>
+					<h4>关联性：</h4>
+				</p>
+				<p>A. 肯定有关：反应出现的时间符合用药的时间顺序，反应符合研究药物已知的
+					反应类型，减量或停药后改善，重复给药再次出现。</p>
+				<p>B. 可能有关：反应出现的时间符合用药的时间顺序，反应符合研究方案已知的
+					反应类型，患者的临床状态或其它治疗方式也有可能产生该反应。</p>
+				<p>C. 可能无关：反应出现的时间不符合用药的时间顺序，反应不太符合研究方案
+					已知的反应类型，患者临床状态或其它治疗方式也有可能产生该反应。</p>
+				<p>D. 无关：反应出现的时间不符合用药的时间顺序，反应有符合非研究方案已知
+					的反应类型，患者的临床状态或其它治疗方式也有可能产生该反应，疾病状
+					态改善或停止其它治疗方式反应消除，重复使用其它治疗方法反应出现。</p>
+				<p>E. 无法判定：反应出现的时间与用药的时间顺序无明确关系，反应与研究方案
+					已知的反应类型相似，同时使用的其它药物也可能引起相同的反应。</p>
+				<br>
+				<table border="1px solid #ccc" style="text-align: center;" cellspacing="0">
+					<tr>
+						<td></td>
+						<td>Ⅲ</td>
+						<td>Ⅳ</td>
+						<td>与黄黛片关联性</td>
+						<td>副反应处理方式</td>
+						<td>副反应处理结果</td>
+					</tr>
+					<tr>
+						<td>肝脏毒性</td>
+						<td><input type="checkbox" name="input16"></td>
+						<td><input type="checkbox" name="input17"></td>
+						<td>
+							<select name="input18" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input19"></td>
+						<td><input type="text" style="width: 4rem;" name="input20"></td>
+					</tr>
+					<tr>
+						<td>肾毒性</td>
+						<td><input type="checkbox" name="input23"></td>
+						<td><input type="checkbox" name="input25"></td>
+						<td>
+							<select name="input26" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input27"></td>
+						<td><input type="text" style="width: 4rem;" name="input28"></td>
+					</tr>
+					<tr>
+						<td>心脏毒性</td>
+						<td><input type="checkbox" name="input32"></td>
+						<td><input type="checkbox" name="input33"></td>
+						<td>
+							<select name="input34" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input35"></td>
+						<td><input type="text" style="width: 4rem;" name="input36"></td>
+					</tr>
+					<tr>
+						<td>胃肠道反应</td>
+						<td><input type="checkbox" name="input40"></td>
+						<td><input type="checkbox" name="input41"></td>
+						<td>
+							<select name="input42" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input43"></td>
+						<td><input type="text" style="width: 4rem;" name="input44"></td>
+					</tr>
+				</table>
+				<br>
+				<h3></h3>
+				<table border="1px solid #ccc" style="text-align: center;" cellspacing="0">
+					<tr>
+						<td></td>
+						<td>0</td>
+						<td>Ⅰ</td>
+						<td>Ⅱ</td>
+						<td>Ⅲ</td>
+						<td>Ⅳ</td>
+						<td>与长春新碱关联性</td>
+						<td>副反应处理方式</td>
+						<td>副反应处理结果</td>
+					</tr>
+					<tr>
+						<td>皮肤</td>
+						<td><input type="checkbox" name="input63"></td>
+						<td><input type="checkbox" name="input64"></td>
+						<td><input type="checkbox" name="input65"></td>
+						<td><input type="checkbox" name="input66"></td>
+						<td><input type="checkbox" name="input67"></td>
+						<td>
+							<select name="input68" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input69"></td>
+						<td><input type="text" style="width: 4rem;" name="input70"></td>
+					</tr>
+					<tr>
+						<td>头发</td>
+						<td><input type="checkbox" name="input71"></td>
+						<td><input type="checkbox" name="input72"></td>
+						<td><input type="checkbox" name="input73"></td>
+						<td><input type="checkbox" name="input74"></td>
+						<td><input type="checkbox" name="input75"></td>
+						<td>
+							<select name="input76" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input77"></td>
+						<td><input type="text" style="width: 4rem;" name="input78"></td>
+					</tr>
+					<tr>
+						<td>感染</td>
+						<td><input type="checkbox" name="input79"></td>
+						<td><input type="checkbox" name="input80"></td>
+						<td><input type="checkbox" name="input81"></td>
+						<td><input type="checkbox" name="input82"></td>
+						<td><input type="checkbox" name="input83"></td>
+						<td>
+							<select name="input84" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input85"></td>
+						<td><input type="text" style="width: 4rem;" name="input86"></td>
+					</tr>
+					<tr>
+						<td>静脉炎</td>
+						<td><input type="checkbox" name="input87"></td>
+						<td><input type="checkbox" name="input88"></td>
+						<td><input type="checkbox" name="input89"></td>
+						<td><input type="checkbox" name="input90"></td>
+						<td><input type="checkbox" name="input91"></td>
+						<td>
+							<select name="input92" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input93"></td>
+						<td><input type="text" style="width: 4rem;" name="input94"></td>
+					</tr>
+					<tr>
+						<td>周围神经</td>
+						<td><input type="checkbox" name="input95"></td>
+						<td><input type="checkbox" name="input96"></td>
+						<td><input type="checkbox" name="input97"></td>
+						<td><input type="checkbox" name="input98"></td>
+						<td><input type="checkbox" name="input99"></td>
+						<td>
+							<select name="input100" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input101"></td>
+						<td><input type="text" style="width: 4rem;" name="input102"></td>
+					</tr>
+				</table>
+				<br>
+				<h3></h3>
+				<table border="1px solid #ccc" style="text-align: center;" cellspacing="0">
+					<tr>
+						<td>骨髓抑制</td>
+						<td>数值</td>
+						<td>与长春新碱关联性</td>
+						<td>副反应处理方式</td>
+						<td>副反应处理结果</td>
+					</tr>
+					<tr>
+						<td>（）方案治疗期间白细胞计数最低值</td>
+						<td><input type="text" name="input103" style="width: 3rem;"></td>
+						<td>
+							<select name="input104" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input105"></td>
+						<td><input type="text" style="width: 4rem;" name="input106"></td>
+					</tr>
+					<tr>
+						<td>（）方案治疗期间血小板计数最低值</td>
+						<td><input type="text" name="input108" style="width: 3rem;"></td>
+						<td>
+							<select name="input109" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input110"></td>
+						<td><input type="text" style="width: 4rem;" name="input111"></td>
+					</tr>
+					<tr>
+						<td>（）方案治疗期间中性粒细胞减少中位时间（d）</td>
+						<td><input type="text" name="input113" style="width: 3rem;"></td>
+						<td>
+							<select name="input114" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input115"></td>
+						<td><input type="text" style="width: 4rem;" name="input116"></td>
+					</tr>
+					<tr>
+						<td>（）方案治疗期间外周血血小板减少中位时间（d）</td>
+						<td><input type="text" name="input118" style="width: 3rem;"></td>
+						<td>
+							<select name="input119" id="">
+								<option value=""></option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+							</select>
+						</td>
+						<td><input type="text" style="width: 4rem;" name="input120"></td>
+						<td><input type="text" style="width: 4rem;" name="input121"></td>
+					</tr>
+				</table>
+				<br>
+				<p>其他副反应（请描述）：<input type="text" name="input240"></p>
+				<button class="dududa" ng-click="submit()">填写完成</button>
+			</form>
+
+		</div>
+	</div>
+</body>
+
+</html>

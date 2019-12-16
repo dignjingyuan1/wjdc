@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+body,p,h1,h2,h3,h4,h5,h6,ul,dl,dd,td,input,fieldset,textarea,option{ margin:0; padding:0; box-sizing: border-box}
+li{list-style:none;}
+a{text-decoration:none; color:#333;}
+img{border:none; vertical-align:top; }
+a,input{outline:none;}
+h1,h2,h3,h4,h5,h6,b,strong{font-weight:100;}
+i,em{font-style:normal;}
+body{font:12px "微软雅黑";}
+.clear{zoom:1;}
+.clear:after{content:"."; display:block; clear:both; height:0; visibility:hidden;}
+.fl{float:left;}
+.fr{float:right;}
+div,p{
+    box-sizing: border-box
+}
+Html{font-size:10px}
+*{
+    margin:0; padding:0;
+}
+html,body{
+    width: 100%;height: 100%;
+}
+.main{
+    width: 100%;height: 100%;
+}
+.main-app{
+    width: 100%;height: 100%;
+}
+body,p,h1,h2,h3,h4,h5,h6,ul,dl,dd,td,input,fieldset,textarea,option{ margin:0; padding:0; box-sizing: border-box}
+
+.home-panel{
+    background: url(../img/orther-bg.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+.content{
+    width: 90%;
+    background: white;
+    margin-top: 10%;
+    margin-left: 5%;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 5px;
+}
+
+.dudubutton{
+    width: 15rem;
+    height: 5rem;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 2.5rem;
+    box-shadow: -2px 5px 10px #147aff;
+    background-image: linear-gradient(0deg, #0ed66e 0%, #35eaa7 100%);
+    margin-bottom: 0.5rem;
+}
